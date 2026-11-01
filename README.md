@@ -2,6 +2,8 @@
 
 Read-only Omarchy bar widget (`org.garminlinux.status`). It shows whether any Garmin USB storage is connected and how many physical Garmin devices that storage belongs to. Edge internal storage and an SD card on the same Edge count as one device and two volumes.
 
+This widget only shows that count. Backups, activity summaries, courses, and map review are in the separate desktop app, [Garmin Linux Companion](https://github.com/cbayschm74/garmin-linux). Installing this plugin does not install that app.
+
 A left click opens Garmin Linux Companion only when a launch command has been configured. The count itself does not need that application.
 
 The widget does not mount volumes, open Garmin files, or display device names, labels, paths, or serial numbers.
@@ -14,7 +16,7 @@ The widget does not mount volumes, open Garmin files, or display device names, l
 
 No extra Python packages are installed. The widget does not download files, run a shell pipeline, or change system configuration by itself. Plugins run as unsandboxed code inside `omarchy-shell`. Review `BarWidget.qml` and `status.py` before enabling this one.
 
-Garmin Linux Companion is optional. Install it separately when you want the bar click to open the desktop app.
+Garmin Linux Companion is optional. Install it from https://github.com/cbayschm74/garmin-linux when you want the bar click to open the desktop app.
 
 ## Install
 
